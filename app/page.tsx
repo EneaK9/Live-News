@@ -7,7 +7,7 @@ async function Home() {
   // fetch the news data
   const news: NewsResponse = await fetchNews(categories.join(","));
 
-  console.log(news);
+  await new Promise((resolve) => setTimeout(resolve, 3000));
 
   return <div><NewsList news={news}/></div>;
 }
