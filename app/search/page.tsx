@@ -1,5 +1,7 @@
-import fetchNews from "@/lib/fetchNews";
+
+import fetchNews from "../../lib/fetchNews";
 import NewsList from "../NewsList";
+import React from "react";
 
 type Props = {
   searchParams?: { term: string };

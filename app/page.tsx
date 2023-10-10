@@ -1,6 +1,7 @@
-import { categories } from "@/constants";
-import fetchNews from "@/lib/fetchNews";
+import { categories } from "../constants";
 import NewsList from "./NewsList";
+import React from "react";
+import fetchNews from "../lib/fetchNews";
 
 async function Home() {
   // fetch the news data

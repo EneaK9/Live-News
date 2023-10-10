@@ -1,3 +1,4 @@
+import React from "react";
 import ReadMore from "./ReadMore";
 
 type Props= {
