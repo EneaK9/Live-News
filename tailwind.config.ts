@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import lineClampPlugin from '@tailwindcss/line-clamp';
 
 const config: Config = {
   content: [
@@ -6,6 +7,7 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: "class", 
   theme: {
     extend: {
       backgroundImage: {
@@ -15,6 +17,8 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    lineClampPlugin,
+  ],
 }
 export default config
