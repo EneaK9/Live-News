@@ -1,7 +1,6 @@
-import { categories } from "../constants";
+import { categories } from "@/constants";
+import fetchNews from "@/lib/fetchNews";
 import NewsList from "./NewsList";
-import React from "react";
-import fetchNews from "../lib/fetchNews";
 
 async function Home() {
   // fetch the news data
@@ -9,7 +8,11 @@ async function Home() {
 
   await new Promise((resolve) => setTimeout(resolve, 3000));
 
-  return <div><NewsList news={news}/></div>;
+  return (
+    <div>
+      <NewsList news={news} />
+    </div>
+  );
 }
 
 export default Home;
