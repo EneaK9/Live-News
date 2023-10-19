@@ -7,7 +7,7 @@ function ArticlePage() {
   const router = useRouter();
 
   if (!router.query) {
-    return notFound();
+    return <div>hello</div>;
   }
 
   const { title, author, source, published_at, description, image } =
