@@ -3,13 +3,12 @@ import React from "react";
 import LiveTimestamp from "../LiveTimestamp";
 
 type Props = {
-  searchParams?: Article;
+  searchParams: Article;
 };
 
-function ArticlePage({ searchParams }: Props) {
+function ArticlePage({ searchParams}: Props) {
   if (
-    (searchParams && Object.entries(searchParams).length === 0) ||
-    !searchParams
+    (searchParams && Object.entries(searchParams).length === 0) 
   ) {
     return notFound();
   }
