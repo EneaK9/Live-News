@@ -10,7 +10,7 @@ function ArticlePage({ searchParams}: Props) {
   if (
     (searchParams && Object.entries(searchParams).length === 0) 
   ) {
-    return notFound();
+    return <div>hello</div>;
   }
 
   const article: Article = searchParams;
