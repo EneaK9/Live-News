@@ -8,9 +8,10 @@ type Props = {
 
 function ArticlePage({ searchParams}: Props) {
   if (
-    (searchParams && Object.entries(searchParams).length === 0) 
+    (searchParams || Object.entries(searchParams).length === 1) ||
+    !searchParams
   ) {
-    return <div>hello</div>;
+    return notFound();
   }
 
   const article: Article = searchParams;
